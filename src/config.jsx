@@ -18,23 +18,33 @@ module.exports = {
     navLinks: [
       {
         name: 'About',
-        url: '/#about',
+        url: '/about',
       },
       {
         name: 'Experience',
-        url: '/#jobs',
+        url: '/jobs',
       },
       {
         name: 'Work',
-        url: '/#projects',
-      },
-      {
-        name: 'Skills',
-        url: '/#skills',
+        url: '/projects',
       },
       {
         name: 'Contact',
-        url: '/#contact',
+        url: '/contact',
       },
     ],
+    experience: [
+       {
+         name: "Ingen10",
+         date: "June 2020 - May 2021",
+         job: "Electronics Engineering (internship)"
+       },
+       {
+        name: "University of Oviedo",
+        date: "Jan. 2022 - Sep. 2022",
+        job: "Electronics Engineering I+D"
+       }
+    ],
+    skills: [
+    ]
   };

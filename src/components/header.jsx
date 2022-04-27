@@ -1,6 +1,6 @@
 import React from "react";
 
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import { navLinks, socialMedia } from "../config"
 
@@ -13,13 +13,9 @@ import Icons from "../components/icons/icon"
 
 const StyledHeader = styled.header`
     display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    align-items: center;
     position: fixed;
 
-    z-index: 2;
+    //z-index: 2;
     width: 100vw;
     height: 100px;
     background-color: #1D1D1D;
@@ -60,6 +56,7 @@ const StyledNav = styled.nav`
 
     position: relative;
     width: 100%;
+    height: 100px;
     z-index: 3;
     padding: 0px 75px;
    
