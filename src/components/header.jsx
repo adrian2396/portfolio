@@ -17,13 +17,15 @@ const StyledHeader = styled.header`
 
     //z-index: 2;
     width: 100vw;
-    height: 100px;
+    height: 90px;
     background-color: #1D1D1D;
 `;
 
 const StyledLogo = styled.div`
     display: flex;
     text-decoration: none;
+
+    width: 127px;
 
     a {
         display: flex;
@@ -56,7 +58,7 @@ const StyledNav = styled.nav`
 
     position: relative;
     width: 100%;
-    height: 100px;
+    height: 90px;
     z-index: 3;
     padding: 0px 75px;
    
@@ -168,7 +170,7 @@ const Header = () => {
                         <a  href={url}>
                             <StyledFont>{name}</StyledFont>
                         </a>
-                    </li>
+                        </li>
                     ))}
                     </ol>
                 </StyledLinks>

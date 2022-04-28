@@ -8,9 +8,9 @@ const StyledPresentation = styled.section`
     flex-wrap: nowrap;
     justify-content: center;
 
-    padding: 20px 280px;
+    padding: 20px 230px;
 
-    height: calc(100vh - 175px);
+    height: calc(100vh - 165px);
     background-color: #1D1D1D;
 
     @media (max-width: 1300px){

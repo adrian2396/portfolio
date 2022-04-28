@@ -11,7 +11,7 @@ const StyledWorks = styled.section`
 
     padding: 30px 280px;
 
-    height: calc(100vh - 175px);
+    height: calc(100vh - 165px);
     background-color: #1D1D1D;
 
     @media (max-width: 1300px){

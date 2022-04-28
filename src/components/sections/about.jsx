@@ -1,5 +1,7 @@
 import React from "react";
 
+import { skills } from "../../config";
+
 import styled from 'styled-components';
 import Title from "../partials/title"
 
@@ -9,9 +11,9 @@ const StyledAbout = styled.section`
     flex-wrap: nowrap;
     justify-content: center;
 
-    padding: 20px 280px;
+    padding: 20px 230px;
 
-    height: calc(100vh - 175px);
+    height: calc(100vh - 165px);
     background-color: #1D1D1D;
 
     @media (max-width: 1300px){
@@ -33,12 +35,12 @@ const StyledAboutInfo = styled.div`
 `
 
 const StyledDescriptionContainer = styled.div`
-    width: 30%;
+    width: 32%;
     p{ 
         color: #b3b3b3;
-        font-size: 13px;
+        font-size: 15px;
         font-family: 'Gotham Light', sans-serif;
-        font-weight: 200;
+        font-weight: 100;
         letter-spacing: 1px;
         line-height: 19px;
         word-spacking: 1px;
@@ -48,16 +50,82 @@ const StyledDescriptionContainer = styled.div`
 `
 
 const StyledPhoto = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    width: 34%;
+
     img{
-        
+        border-radius: 126px
+    }
+
+    }
+`
+const StyledSkills = styled.div`
+    width: 34%;
+    padding: 50px 0px 80px  0px;
+    display: grid;
+    ul{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+        grid-gap: 0 10px;
+        justify-items: center;
+
+        width: auto;
+        heigth: auto;
+        padding: 0px 0px 0px 35px;
+        list-style-type: none;
+        margin: 0px;
+
+        li{
+            position: relative;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            font-family: 'Gotham Light', sans-serif;
+            font-weight: 200;
+            font-size: 15px;
+            color: #b3b3b3;
+            margin: 3px;
+            width: 130px;
+
+            &:before {
+                content: '▹';
+                position: absolute;
+                left: 0;
+                color: #FD072D;
+                font-size: 10px;
+                line-height: 12px;
+            }
+        }
+    }
+`
+const StyledTopic = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    u{
+        margin: 3px 0px;
+        font-family: 'Gotham Light', sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        color: #FD072D;
     }
 `
 
 const About = () => {
+    
+    const topics = ["Electronics", "Programming Language", "Frameworks & Libraries", "Tools"];
+    
     return (
         <StyledAbout>
             <Title name = "About"/>
             <StyledAboutInfo>
+                <StyledPhoto>
+                       <img src="https://i.ibb.co/gSYrDpj/Adri-n-DSC-6406.jpg" width="65%" height="auto" alt="Adri-n-DSC-6406" border="0"/>
+                </StyledPhoto>
                 <StyledDescriptionContainer>
                 <p>
                    Hi! My name is Adrian. My interest on electronics has 
@@ -79,6 +147,25 @@ const About = () => {
                    with especial enphasis on IOT systems and web development.
                 </p>
                 </StyledDescriptionContainer>
+                <StyledSkills>
+                      {skills.map(({topic, skill}, i) => (
+                        <>
+                            <StyledTopic>
+                               <u>{topic}</u>
+                            </StyledTopic>
+                            <ul>                            
+                            {skill.map(({s1,s2,s3,s4},i) => (
+                                <>
+                                <li>{s1}</li>
+                                <li>{s2}</li>
+                                <li>{s3}</li>
+                                <li>{s4}</li>
+                                </>
+                            ))}
+                            </ul>
+                        </>
+                      ))}
+                </StyledSkills> 
             </StyledAboutInfo>
         </StyledAbout>
     );

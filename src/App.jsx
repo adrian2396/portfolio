@@ -29,10 +29,10 @@ const StyledSections = styled.div`
       display: block;
       overflow-y: scroll;
       width: 100%;
-      height: calc(100vh - 175px);
+      height: calc(100vh - 165px);
       background-color: white;
       position: relative;
-      top: 100px;
+      top: 90px;
 `;
 
 function App() {
