@@ -11,19 +11,16 @@ const StyledAbout = styled.section`
     flex-wrap: nowrap;
     justify-content: center;
 
-    padding: 20px 230px;
+    padding: 20px 230px 100px 230px;
 
     height: calc(100vh - 165px);
     background-color: #1D1D1D;
 
     @media (max-width: 1300px){
-        padding: 30px 150px;
+        padding: 0px 50px 100px 50px;
     }
     @media (max-width: 1080px){
-        padding: 30px 75px;
-    }
-    @media (max-width: 768px){
-        padding: 30px 30px;
+        padding: 0px 20px 100px 20px;
     }
 `;
 
@@ -59,7 +56,7 @@ const StyledPhoto = styled.div`
     width: 34%;
 
     img{
-        border-radius: 126px
+        border-radius: 52px
     }
 
     }
@@ -107,7 +104,7 @@ const StyledTopic = styled.div`
     justify-content: center;
     align-items: center;
     u{
-        margin: 3px 0px;
+        margin: 10px 0px;
         font-family: 'Gotham Light', sans-serif;
         font-size: 17px;
         font-weight: 400;
@@ -137,12 +134,12 @@ const About = () => {
                 <p>
                    One year later, I had my first professional experience working in a
                    company that collaborates with the University of Oviedo. 
-                   In this job, I was developing my first Hardware & Software. During this period, my interest of web depelopment 
-                   started, creating a friendly web user interface for this project. I used this project for my end-of-degree-project 
+                   In this job, I was developing my first Hardware & Software. During this period, my interest in web depelopment 
+                   started creating a friendly web user interface for the device. I used this project for my end-of-degree-project 
                    passed with hornors.
                 </p>
                 <p>
-                   Nowadays, I'm working as a Electronic Engineer on I+D department at University of Oviedo developing an IOT project.
+                   Nowadays, I'm working as a Electronic Engineer on I+D department at University of Oviedo developing an IOT device.
                    Over this year, I'm focusking on improve my Software and Hardware design sills
                    with especial enphasis on IOT systems and web development.
                 </p>

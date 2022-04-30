@@ -10,11 +10,7 @@ import Skills from "./components/sections/skills";
 import Contact from "./components/sections/contact";
 import Footer from "./components/footer";
 
-
-import { BrowserRouter as Router, 
-         Routes, 
-         Route, 
-         Link} from 'react-router-dom'
+import { BrowserRouter } from "react-router-dom";
 
 const StyledApp = styled.div`
   display: block;
@@ -37,7 +33,7 @@ const StyledSections = styled.div`
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <StyledApp>
         <Header/>
         <StyledSections>
@@ -48,7 +44,7 @@ function App() {
           <Contact/>
         </StyledSections>
       </StyledApp> 
-    </Router>
+    </BrowserRouter>
   );
 }
 

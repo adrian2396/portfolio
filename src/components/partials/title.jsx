@@ -16,7 +16,7 @@ const StyledText = styled.div`
     flex-direction: row;
     justify-content: center;
 
-    width: 280px;
+    width: 350px;
     height: 40px;
 
     h1{

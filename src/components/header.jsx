@@ -4,6 +4,8 @@ import styled from 'styled-components';
 
 import { navLinks, socialMedia } from "../config"
 
+import { Link } from "react-router-dom";
+
 import Linkedin from "./icons/linkedin"
 import Instagram from "./icons/instagram"
 import Github from "./icons/github"
@@ -167,9 +169,9 @@ const Header = () => {
                     <ol>
                     {navLinks.map(({name, url}, i) =>(
                         <li key={i}>
-                        <a  href={url}>
+                        <Link  to={url}>
                             <StyledFont>{name}</StyledFont>
-                        </a>
+                        </Link>
                         </li>
                     ))}
                     </ol>
