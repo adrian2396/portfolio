@@ -40,7 +40,7 @@ module.exports = {
          job: "Electronics Engineering (internship)"
        },
        {
-        name: "University of Oviedo",
+        name: "UNIOVI",
         date: "Jan. 2022 - Sep. 2022",
         job: "Electronics Engineering I+D"
        }
@@ -105,5 +105,5 @@ module.exports = {
       {
         topic: "Tools"
       }
-    ]
+    ],
   };

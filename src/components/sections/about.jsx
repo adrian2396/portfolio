@@ -93,8 +93,8 @@ const StyledSkills = styled.div`
                 position: absolute;
                 left: 0;
                 color: #FD072D;
-                font-size: 10px;
-                line-height: 12px;
+                font-size: 15px;
+                line-height: 15px;
             }
         }
     }
@@ -107,8 +107,8 @@ const StyledTopic = styled.div`
         margin: 10px 0px;
         font-family: 'Gotham Light', sans-serif;
         font-size: 17px;
-        font-weight: 400;
-        color: #FD072D;
+        font-weight: 300;
+        color: #09fdd9;
     }
 `
 

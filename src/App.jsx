@@ -6,11 +6,14 @@ import Presentation from "./components/sections/presentation";
 import About from "./components/sections/about";
 import Experience from "./components/sections/experience";
 import Works from "./components/sections/works";
-import Skills from "./components/sections/skills";
 import Contact from "./components/sections/contact";
 import Footer from "./components/footer";
 
-import { BrowserRouter } from "react-router-dom";
+
+import { BrowserRouter as Router, 
+         Routes, 
+         Route, 
+         Link } from 'react-router-dom'
 
 const StyledApp = styled.div`
   display: block;
@@ -33,7 +36,7 @@ const StyledSections = styled.div`
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <StyledApp>
         <Header/>
         <StyledSections>
@@ -44,7 +47,7 @@ function App() {
           <Contact/>
         </StyledSections>
       </StyledApp> 
-    </BrowserRouter>
+    </Router>
   );
 }
 

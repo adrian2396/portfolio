@@ -14,7 +14,7 @@ const StyledPresentation = styled.section`
     background-color: #1D1D1D;
 
     @media (max-width: 1300px){
-        padding: 0px 50px 100px 50px;
+        padding: 0px 150px 100px 150px;
     }
     @media (max-width: 768px){
         padding: 0px 30px;

@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 
 import styled, { css } from 'styled-components';
 import Title from "../partials/title"
+
+import { experience } from "../../config";
 
 const StyledExperience = styled.section`
     display: flex;
@@ -24,70 +26,185 @@ const StyledExperience = styled.section`
 
 const StyledInfo = styled.div`
     display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
 
-    span{
+    height: 100%;
 
-    }
-
-    p{
-
-    }
-
-
-
-
+    margin: 35px 0px;
 `
 const StyledButton = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
-    width: 100%;
-    height: 80px;
+    width: 700px;
+    height: 40px;
+    padding-left: 40px;
     
     button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
 
+        width: 200px;
+        height: 40px;
+        border: none;
+
+        background-color: #1D1D1D;
+        color: ${({active }) => (active ? '#FD072D' : '#515152')};
+        font-family: 'Gotham Light', sans-serif;
+        font-size: 25px;
+        text-align: left;
+        font-weight: 600;
+
+        &:hover,
+        &:focus {
+            background-color: #292929;
+            color: #FD072D;
+            font-weight: 300;
+        }
     } 
 `
+const StyledDescription = styled.div`
 
-const StyledTabButton = styled.button`
-  display: flex;
-  align-items: center;
-  width: 10%;
-  heigth: 90px;
-  height: var(--tab-height);
-  padding: 0 20px 2px;
-  border-left: 2px solid var(--lightest-navy);
-  background-color: transparent;
-  color: ${({ isActive }) => (isActive ? '' : '')};
-  font-family: 'Gotham Light', sans-serif;
-  font-size: 15px;
-  text-align: left;
-  white-space: nowrap;
-  @media (max-width: 768px) {
-    padding: 0 15px 2px;
-  }
-  @media (max-width: 600px) {
-    min-width: 120px;
-    padding: 0 15px;
-    border-left: 0;
-    border-bottom: 2px solid var(--lightest-navy);
-    text-align: center;
-  }
-  &:hover,
-  &:focus {
-    background-color: var(--light-navy);
-  }
-`;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 700px;
+    height: 350px;
+
+    span {
+        padding-left: 40px;
+        padding-left: 40px;
+        margin-bottom: 0px;
+        font-family: 'Gotham Light', sans-serif;
+        font-size: 21px;
+        text-align: justify;
+        color: #b3b3b3;
+        margin: 1px;
+        a{
+            text-align: justify;
+            margin-left: 15px;
+            color: #09fdd9;
+            a:active {
+                color: #09fdd9;
+            }
+        }
+    }
+
+    p{
+        padding-left: 40px;
+        margin: 2px;
+        text-align: justify;
+        font-size: 20px;
+        margin: 4px 0px 0px 0px;
+        font-family: 'Gotham Light', sans-serif;
+        color: #515152;
+    }
+
+    ul{
+
+        list-style-type: none;
+
+        li{
+            position: relative;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            text-align: justify;
+            font-family: 'Gotham Light', sans-serif;
+            font-size: 17px;
+            letter-spacing: 1px;
+            line-height: 19px;
+            word-spacking: 1px;
+            color: #b3b3b3;
+
+            &:before {
+                content: '▹';
+                left: 0;
+                position: absolute;
+                color: #FD072D;
+                font-size: 15px;
+                line-height: 15px;
+            }
+        }
+    }
+`
 
 const Experience = () => {
+
+    const [active, setActive] = useState(true);
+
+    const handleOnClick = (event) => {
+        event.target.name == 'Ingen10' ? setActive(true) : setActive(false);
+
+        console.log(event.target.name);
+    }
     return (
         <StyledExperience>
             <Title name = "Experience"/>
             <StyledInfo>
-                <StyledButton></StyledButton>
+                <StyledButton>
+                    {experience.map(({name}, i) => (
+                        <>
+                            <button key={i} name={name} onClick={handleOnClick} >{name}</button>
+                        </>
+                    ))}
+                </StyledButton>
+                {active ? 
+                    <>
+                       <StyledDescription>
+                           <span>
+                               Electronics Engineering
+                               <a href="http://www.ingen10.com/"  target="_blank" rel="noreferrer">@Ingen10</a>
+                           </span>
+                           <p>June 2020 - May 2021</p>
+                           <ul>
+                               <li>
+                                    Design an portable device for testing photodynamic treatments
+                                    in cancerous tissues  
+                                    
+                               </li>
+                               <li>Hardware & Software Design </li>
+                               <li>Start-up and service work on existing projects</li>
+                               <li>ESP32 microcontroller programming (C/C++)</li>
+                               <li>
+                                   Design and programming of a web page as User Interface (HTML, CSS, Javascript, Bootstrap, AYAX)
+                               </li>
+                               <li>Design and soldering of PCBs in Altium</li>
+                           </ul>
+                       </StyledDescription>
+                    </>
+                    :
+                    <>
+                      <StyledDescription>
+                          <span>
+                              R&D electronic engineer
+                              <a href="https://www.uniovi.es/"  target="_blank" rel="noreferrer">@UNIOVI</a>
+                          </span>
+                          <p>June 2020 - May 2021</p>
+                          <ul>
+                              <li>Design of an IOT architecture for the development of a medical device which measures the RGB spectrum in blood</li>
+                              <li>Hardware & Software Design</li>
+                              <li>Working with the following protocols: Wifi, Bluetooth, HTTP, MQTT, I2C and SPI</li>
+                              <li>ESP32 microcontroller programming (C/C++)</li>
+                              <li>Frontend: web app implementation with React.js</li>
+                              <li>Backend: implementation of a server (node.js) and a database (MongoDB)</li>
+                          </ul>
+                      </StyledDescription>
+                    </>
+                }
             </StyledInfo>
         </StyledExperience>
     );
