@@ -8,8 +8,7 @@ const StyledPresentation = styled.section`
     flex-wrap: nowrap;
     justify-content: center;
 
-    padding: 20px 230px 100px 230px;
-
+    padding: 20px 230px 50px 230px;
     height: calc(100vh - 165px);
     background-color: #1D1D1D;
 
@@ -93,7 +92,7 @@ const StyledProffesion2 = styled.div`
         height: auto;
     }
     @media (max-width: 1080px){
-        width: 550px;
+        width: 700px:;
         height: auto;
     }
     @media (max-width: 768px){
@@ -120,6 +119,7 @@ const StyledProffesion2 = styled.div`
         font-weight: 200;
         color: #515152;
         line-height: 150%;
+        text-align: justify;
     }
 `;
 

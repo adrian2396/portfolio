@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Icons from "../components/icons/icon"
 
 
-const StyledFooter = styled.footer`
+const StyledFooter = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;

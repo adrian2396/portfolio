@@ -171,18 +171,12 @@ const Experience = () => {
                            </span>
                            <p>June 2020 - May 2021</p>
                            <ul>
-                               <li>
-                                    Design an portable device for testing photodynamic treatments
-                                    in cancerous tissues  
-                                    
-                               </li>
+                               <li>Design of a portable device for testing photodynamic treatments on cancerous tissues</li>
                                <li>Hardware & Software Design </li>
-                               <li>Start-up and service work on existing projects</li>
+                               <li>Commissioning and servicing of existing devices</li>
                                <li>ESP32 microcontroller programming (C/C++)</li>
-                               <li>
-                                   Design and programming of a web page as User Interface (HTML, CSS, Javascript, Bootstrap, AYAX)
-                               </li>
-                               <li>Design and soldering of PCBs in Altium</li>
+                               <li>Design of a web page as user interface for the prototype (HTML, CSS, Javascript, Bootstrap, AYAX)</li>
+                               <li>PCB design and soldering</li>
                            </ul>
                        </StyledDescription>
                     </>
@@ -193,11 +187,11 @@ const Experience = () => {
                               R&D electronic engineer
                               <a href="https://www.uniovi.es/"  target="_blank" rel="noreferrer">@UNIOVI</a>
                           </span>
-                          <p>June 2020 - May 2021</p>
+                          <p>Jan. 2022 - Act.</p>
                           <ul>
                               <li>Design of an IOT architecture for the development of a medical device which measures the RGB spectrum in blood</li>
                               <li>Hardware & Software Design</li>
-                              <li>Working with the following protocols: Wifi, Bluetooth, HTTP, MQTT, I2C and SPI</li>
+                              <li>protocols used: Wifi, Bluetooth, HTTP, MQTT, LoraWAN, I2C and SPI</li>
                               <li>ESP32 microcontroller programming (C/C++)</li>
                               <li>Frontend: web app implementation with React.js</li>
                               <li>Backend: implementation of a server (node.js) and a database (MongoDB)</li>

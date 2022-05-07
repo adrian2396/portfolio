@@ -90,20 +90,113 @@ module.exports = {
       }
       ]
       }
-
     ],
-    topics: [
+    works: [
       {
-        topic: "Electronics"
+        name: "Photodynamic Test",
+        type: "Software & Hardware",
+        device: "https://i.ibb.co/r7HBsFW/device.png",
+        pcb: "https://i.ibb.co/mJZ3yw9/pcb.png",
+        web: "https://i.ibb.co/YpJcVXp/web.png",
+        abstract: "A portable prototype to perform tests to study photodynamic treatments in an automated way that allows to vary the wavelength by changing the LEDs. The project consists of a LED matrix to excite the samples and a stepper motor to move the matrix through the ELISA plate. The current of the LEDs is controlled by a led driver. A web page has also been implemented as a user interface to enter the parameters.",
+        tools: [
+          {
+            tool: "Altium"
+          },
+          {
+            tool: "C++"
+          },
+          {
+            tool: "PlatformIO"
+          },
+          {
+            tool: "ESP32"
+          },
+          {
+            tool: "Driver LEDs"
+          },
+          {
+            tool: "HTML & CSS"
+          },
+          {
+            tool: "Javascript"
+          },
+          {
+            tool: "GIT"
+          }
+        ]
       },
       {
-        topic: "Programming Languaje"
+        name: "W8Fit Device",
+        type: "Software & Hardware",
+        device: "https://i.ibb.co/r7HBsFW/device.png",
+        pcb: "https://i.ibb.co/mJZ3yw9/pcb.png",
+        web: "https://i.ibb.co/YpJcVXp/web.png",
+        abstract: "A portable device for automatic testing photodynamic treatments in collaboration with the department of analytical expectometry of the University of Uviedo. The project consists of a LED matrix to excite the samples and a stepper motor to move the matrix through the ELISA plate. The current of the LEDs is controlled by a led driver. A web page has also been implemented as a user interface to enter the parameters.",
+        tools: [
+          {
+            tool: "Altium"
+          },
+          {
+            tool: "C++"
+          },
+          {
+            tool: "PlatformIO"
+          },
+          {
+            tool: "ESP32"
+          },
+          {
+            tool: "React.js"
+          },
+          {
+            tool: "node.js"
+          },
+          {
+            tool: "MongoDB"
+          },
+          {
+            tool: "GIT"
+          }
+        ]
       },
       {
-        topic: "Libraries & Frameworks"
-      },
-      {
-        topic: "Tools"
+        name: "RGB Device",
+        type: "Software & Hardware",
+        device: "https://i.ibb.co/r7HBsFW/device.png",
+        pcb: "https://i.ibb.co/mJZ3yw9/pcb.png",
+        web: "https://i.ibb.co/YpJcVXp/web.png",
+        abstract: "A portable device to perform RGB measurements on infant blood samples in hospitals to quickly determine if the patient is infected with bacteria and should receive antibiotics. ",
+        tools: [
+          {
+            tool: "Altium"
+          },
+          {
+            tool: "C"
+          },
+          {
+            tool: "ESP32"
+          },
+          {
+            tool: "Espressif IDF"
+          },
+          {
+            tool: " React.js"
+          },
+          {
+            tool: "node.js"
+          },
+          {
+            tool: "MongoDB"
+          },
+          {
+            tool: "AWS IOT"
+          },
+          {
+            tool: "GIT"
+          }
+        ]
       }
-    ],
+    ]
+
   };

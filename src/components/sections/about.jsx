@@ -11,7 +11,7 @@ const StyledAbout = styled.section`
     flex-wrap: nowrap;
     justify-content: center;
 
-    padding: 20px 230px 100px 230px;
+    padding: 20px 230px 150px  230px;
 
     height: calc(100vh - 165px);
     background-color: #1D1D1D;
@@ -32,17 +32,22 @@ const StyledAboutInfo = styled.div`
 `
 
 const StyledDescriptionContainer = styled.div`
-    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 36%;
     p{ 
         color: #b3b3b3;
         font-size: 15px;
-        font-family: 'Gotham Light', sans-serif;
-        font-weight: 100;
+        font-family: 'Gotham Light', sans-serif; 
+        font-weight: 400; 
         letter-spacing: 1px;
-        line-height: 19px;
+        line-height: 18px;
         word-spacking: 1px;
         text-align: justify;
         text-justify: inter-palabra;
+        margin: 10px 0px;
     }
 `
 
@@ -53,7 +58,7 @@ const StyledPhoto = styled.div`
     flex-wrap: nowrap;
     flex-direction: row;
 
-    width: 34%;
+    width: 31%;
 
     img{
         border-radius: 52px
@@ -62,7 +67,7 @@ const StyledPhoto = styled.div`
     }
 `
 const StyledSkills = styled.div`
-    width: 34%;
+    width: 31%;
     padding: 50px 0px 80px  0px;
     display: grid;
     ul{
@@ -80,10 +85,10 @@ const StyledSkills = styled.div`
         li{
             position: relative;
             margin-bottom: 10px;
-            padding-left: 20px;
+            padding-left: 15px;
             font-family: 'Gotham Light', sans-serif;
             font-weight: 200;
-            font-size: 15px;
+            font-size: 14px;
             color: #b3b3b3;
             margin: 3px;
             width: 130px;
@@ -108,7 +113,7 @@ const StyledTopic = styled.div`
         font-family: 'Gotham Light', sans-serif;
         font-size: 17px;
         font-weight: 300;
-        color: #09fdd9;
+        color: #FD072D;
     }
 `
 
@@ -121,7 +126,7 @@ const About = () => {
             <Title name = "About"/>
             <StyledAboutInfo>
                 <StyledPhoto>
-                       <img src="https://i.ibb.co/gSYrDpj/Adri-n-DSC-6406.jpg" width="65%" height="auto" alt="Adri-n-DSC-6406" border="0"/>
+                       <img src="https://i.ibb.co/gSYrDpj/Adri-n-DSC-6406.jpg" width="68%" height="auto" alt="Adri-n-DSC-6406" border="0"/>
                 </StyledPhoto>
                 <StyledDescriptionContainer>
                 <p>
@@ -135,8 +140,7 @@ const About = () => {
                    One year later, I had my first professional experience working in a
                    company that collaborates with the University of Oviedo. 
                    In this job, I was developing my first Hardware & Software. During this period, my interest in web depelopment 
-                   started creating a friendly web user interface for the device. I used this project for my end-of-degree-project 
-                   passed with hornors.
+                   started creating a friendly web UI for the device. 
                 </p>
                 <p>
                    Nowadays, I'm working as a Electronic Engineer on I+D department at University of Oviedo developing an IOT device.
