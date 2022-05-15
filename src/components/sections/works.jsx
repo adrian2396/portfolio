@@ -11,7 +11,7 @@ const StyledWorks = styled.section`
     flex-wrap: nowrap;
     justify-content: center;
 
-    padding: 20px 230px 100px 230px ;
+    padding: 20px 250px 100px 250px ;
 
     height: auto;
     background-color: #1D1D1D;

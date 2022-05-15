@@ -172,7 +172,7 @@ module.exports = {
             tool: "Altium"
           },
           {
-            tool: "C"
+            tool: "C/C++"
           },
           {
             tool: "ESP32"

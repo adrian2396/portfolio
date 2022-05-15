@@ -11,7 +11,7 @@ const StyledExperience = styled.section`
     flex-wrap: nowrap;
     justify-content: center;
 
-    padding: 20px 230px 100px 230px;
+    padding: 20px 250px 100px 250px;
 
     height: calc(100vh - 175px);
     background-color: #1D1D1D;
@@ -58,8 +58,6 @@ const StyledButton = styled.div`
         height: 40px;
         border: none;
 
-        background-color: #1D1D1D;
-        color: ${({active }) => (active ? '#FD072D' : '#515152')};
         font-family: 'Gotham Light', sans-serif;
         font-size: 25px;
         text-align: left;
@@ -151,27 +149,33 @@ const Experience = () => {
 
         console.log(event.target.name);
     }
+
     return (
         <StyledExperience>
             <Title name = "Experience"/>
             <StyledInfo>
                 <StyledButton>
-                    {experience.map(({name}, i) => (
-                        <>
-                            <button key={i} name={name} onClick={handleOnClick} >{name}</button>
-                        </>
-                    ))}
+                    <button 
+                        name="Ingen10"
+                        style={active ? {backgroundColor: "#515152" , color:"#FD072D"}: {backgroundColor: "#1D1D1D", color:"#515152"}}
+                        onClick={handleOnClick}>Ingen10
+                    </button>
+                    <button 
+                        name="UNIOVI"
+                        style={active ?  {backgroundColor: "#1D1D1D", color:"#515152"} : {backgroundColor: "#515152", color:"#FD072D"}}
+                        onClick={handleOnClick}>UNIOVI
+                    </button>
                 </StyledButton>
                 {active ? 
                     <>
                        <StyledDescription>
                            <span>
-                               Electronics Engineering
-                               <a href="http://www.ingen10.com/"  target="_blank" rel="noreferrer">@Ingen10</a>
+                               Electronics Engineering Intershipn
+                               <a  href="http://www.ingen10.com/"  target="_blank" rel="noreferrer">@Ingen10</a>
                            </span>
                            <p>June 2020 - May 2021</p>
                            <ul>
-                               <li>Design of a portable device for testing photodynamic treatments on cancerous tissues</li>
+                               <li>Design of a portable prototype for testing photodynamic treatments on cancerous tissues</li>
                                <li>Hardware & Software Design </li>
                                <li>Commissioning and servicing of existing devices</li>
                                <li>ESP32 microcontroller programming (C/C++)</li>
@@ -184,14 +188,14 @@ const Experience = () => {
                     <>
                       <StyledDescription>
                           <span>
-                              R&D electronic engineer
+                              R&D Electronic Engineer
                               <a href="https://www.uniovi.es/"  target="_blank" rel="noreferrer">@UNIOVI</a>
                           </span>
                           <p>Jan. 2022 - Act.</p>
                           <ul>
                               <li>Design of an IOT architecture for the development of a medical device which measures the RGB spectrum in blood</li>
                               <li>Hardware & Software Design</li>
-                              <li>protocols used: Wifi, Bluetooth, HTTP, MQTT, LoraWAN, I2C and SPI</li>
+                              <li>Protocols used: Wifi, Bluetooth, HTTP, MQTT, LoraWAN, I2C and SPI</li>
                               <li>ESP32 microcontroller programming (C/C++)</li>
                               <li>Frontend: web app implementation with React.js</li>
                               <li>Backend: implementation of a server (node.js) and a database (MongoDB)</li>

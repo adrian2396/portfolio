@@ -8,7 +8,7 @@ const StyledPresentation = styled.section`
     flex-wrap: nowrap;
     justify-content: center;
 
-    padding: 20px 230px 50px 230px;
+    padding: 20px 290px 50px 290px;
     height: calc(100vh - 165px);
     background-color: #1D1D1D;
 
@@ -84,13 +84,9 @@ const StyledProffesion2 = styled.div`
     margin-top: 20px;
     margin-bottom: 10px;
 
-    width: 720px;
+    width: 740px;
     height: auto;
-
-    @media (max-width: 1300px){
-        width: 720px;
-        height: auto;
-    }
+    
     @media (max-width: 1080px){
         width: 700px:;
         height: auto;
@@ -178,8 +174,8 @@ const Presentation = () => {
                     <h1>Electronic & Atutomation Engineer.</h1>
                 </StyledProffesion1>
                 <StyledProffesion2>
-                    <h2>I'm an Electronic and Automation Engineer specialiced on Hardware & Software development, mainly focused on IOT systems. 
-                        I also get a medium knowlege on full stack development building some User Interfaces on the web for the projects I've worked on.</h2>
+                    <h2>I am an Electronics and Automation Engineer specialized in Hardware and Software development, mainly focused on IOT systems. 
+                        I also got a medium knowledge in full stack development building some User Interfaces on the web for the projects I have worked on.</h2>
                 </StyledProffesion2>
                 <StyledButtom>
                     <a className="" href="">

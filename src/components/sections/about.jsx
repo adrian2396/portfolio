@@ -11,7 +11,7 @@ const StyledAbout = styled.section`
     flex-wrap: nowrap;
     justify-content: center;
 
-    padding: 20px 230px 150px  230px;
+    padding: 20px 250px 150px  250px;
 
     height: calc(100vh - 165px);
     background-color: #1D1D1D;
@@ -130,22 +130,21 @@ const About = () => {
                 </StyledPhoto>
                 <StyledDescriptionContainer>
                 <p>
-                   Hi! My name is Adrian. My interest on electronics has 
-                   grown over the years due to an amazing experiences in 
-                   my academic journey. One of the most exciting was my stay
-                   in Milano as an Erasmus student in 2019 wich made me get
-                   out of my comfort zone improving both my social and technical skills.
+                   Hello, my name is Adrian. My interest in electronics has grown over the years
+                   due to the amazing experiences in my academic career. One of the most exciting 
+                   was my stay in Milan as an Erasmus student in 2019 which made me get out of my 
+                   comfort zone improving both my social and technical skills.
                 </p>
                 <p>
-                   One year later, I had my first professional experience working in a
-                   company that collaborates with the University of Oviedo. 
-                   In this job, I was developing my first Hardware & Software. During this period, my interest in web depelopment 
-                   started creating a friendly web UI for the device. 
+                   A year later, I had my first professional experience working in a collaborating 
+                   company of the University of Oviedo. In this job, I developed my first Hardware 
+                   and Software project. During this period, my interest in web development started building 
+                   a device friendly web user interface. 
                 </p>
                 <p>
-                   Nowadays, I'm working as a Electronic Engineer on I+D department at University of Oviedo developing an IOT device.
-                   Over this year, I'm focusking on improve my Software and Hardware design sills
-                   with especial enphasis on IOT systems and web development.
+                    Currently, I am working as an Electronic Engineer in the R&D department of the University 
+                    of Oviedo developing an IOT device. During this year, I am focusing on improving my software 
+                    and hardware design skills with special emphasis on IOT systems and web development.
                 </p>
                 </StyledDescriptionContainer>
                 <StyledSkills>
